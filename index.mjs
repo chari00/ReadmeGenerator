@@ -1,10 +1,11 @@
 import inquirer from "inquirer";
 import fs from "fs/promises";
-// import path from "path";
 import generateMarkdown from "./utils/generateMarkdown.mjs";
 import badges from "./utils/badges.mjs";
 
-let question = await inquirer
+let arrAnswers = [];
+
+let questions = await inquirer
   .prompt([
     {
       type: "input",
@@ -52,41 +53,21 @@ let question = await inquirer
   ])
   .then((answers) => {
     console.log(answers);
+    arrAnswers = answers;
   });
 
-let Title = `# ${Title}`;
-let Description = `## ${Description}`;
-let Installation = `## ${Installation}`;
-let Usage = `## ${Usage}`;
-let License = `## ${License}`;
-let Contributing = `## ${Contributing}`;
-let Test = `## ${Test}`;
-let Questions = `## ${Questions}`;
+// let Title = `# ${answers.Title}`;
+// let Description = `## ${answers.Description}`;
+// let Installation = `## ${answers.Installation}`;
+// let Usage = `## ${answers.Usage}`;
+// let License = `## ${answers.License}`;
+// let Contributing = `## ${answers.Contributing}`;
+// let Test = `## ${answers.Test}`;
+// let Questions = `## ${answers.Questions}`;
 
-// let generateReadMe = `# ${Title}
-// ## ${Description}
-// ## ${Installation}
-// ## ${Usage}
-// ## ${License}
-// ## ${Contributing}
-// ## ${Test}`;
-// console.log(generateReadMe);
-
-fs.writeFile(
-  "README.md",
-  generateMarkdown(),
-  (err) => {
-    if (err) throw err;
-  }
-
-  // `# ${Title},
-  // ## ${Description},
-  // ## ${Installation},
-  // ## ${Usage},
-  // ## ${License},
-  // ## ${Contributing},
-  // ## ${Test},
-  // ## ${Questions},`
-
-  //   () => {}
-);
+// fs.writeFile("README.md", generateMarkdown(arrAnswers), (err) => {
+//   if (err) throw err;
+// });
+//fs.writeFile("README.md", generateMarkdown(arrAnswers));
+//let fileText = generateMarkdown(arrAnswers);
+fs.writeFile("README.md", generateMarkdown(arrAnswers));

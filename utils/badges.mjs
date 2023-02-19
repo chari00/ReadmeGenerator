@@ -8,6 +8,13 @@ function badges(License) {
   return licenseBadge(License);
 }
 
-function licenseLink(License) {}
+function links(License) {
+  const licenseLink = {
+    MIT: `https://opensource.org/license/mit/`,
+    Mozilla: `https://opensource.org/license/mpl-2-0/`,
+    PDDL: `https://opendatacommons.org/licenses/pddl/`,
+  };
+  return licenseLink(License);
+}
 
 export default badges;
