@@ -56,15 +56,6 @@ let questions = await inquirer
     arrAnswers = answers;
   });
 
-// let Title = `# ${answers.Title}`;
-// let Description = `## ${answers.Description}`;
-// let Installation = `## ${answers.Installation}`;
-// let Usage = `## ${answers.Usage}`;
-// let License = `## ${answers.License}`;
-// let Contributing = `## ${answers.Contributing}`;
-// let Test = `## ${answers.Test}`;
-// let Questions = `## ${answers.Questions}`;
-
 // fs.writeFile("README.md", generateMarkdown(arrAnswers), (err) => {
 //   if (err) throw err;
 // });
