@@ -61,4 +61,5 @@ let questions = await inquirer
 // });
 //fs.writeFile("README.md", generateMarkdown(arrAnswers));
 //let fileText = generateMarkdown(arrAnswers);
-fs.writeFile("README.md", generateMarkdown(arrAnswers));
+await fs.writeFile("README.md", badges(arrAnswers.License));
+fs.appendFile("README.md", generateMarkdown(arrAnswers));

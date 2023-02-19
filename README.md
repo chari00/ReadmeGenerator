@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Readme Generator
   ## Table of Content 
 - [Description](#Description)
@@ -9,17 +11,17 @@
 - [Questions](#Questions)
 
 ## Description
-This is an App to generate a README.md file.
+This is an App to generate README.md file.
 ## Installation 
 node.js, inquirer type (npm init -y) and  (npm i inquirer) in the command line.
 ## Usage
-In the command line type node index.mjs, press enter to run the readme questionaire for generating readme file in GitHub.
+In the command line type node index.mjs, press ENTER to run the README questionaire for generating README file in GitHub.
 ## License
 This project is covered by MIT.
 ## Contributing
-Please see guidelins for contributing to this repository.
+Please see guidelines for contributing to this repository.
 ## Test
-Type npm index.mjs to see if the program is working with out any error.
+Type npm index.mjs to see if the application is working with out any error.
 ## Questions
 For questions and comments please contact the following details:
 
