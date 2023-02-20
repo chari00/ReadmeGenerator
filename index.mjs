@@ -4,7 +4,7 @@ import generateMarkdown from "./utils/generateMarkdown.mjs";
 import badges from "./utils/badges.mjs";
 
 let arrAnswers = [];
-
+// array of questions for user
 let questions = await inquirer
   .prompt([
     {
@@ -55,11 +55,7 @@ let questions = await inquirer
     console.log(answers);
     arrAnswers = answers;
   });
-
-// fs.writeFile("README.md", generateMarkdown(arrAnswers), (err) => {
-//   if (err) throw err;
-// });
-//fs.writeFile("README.md", generateMarkdown(arrAnswers));
-//let fileText = generateMarkdown(arrAnswers);
+//funtion to diplay the license badge at the top of the readme title
 await fs.writeFile("README.md", badges(arrAnswers.License));
+// function to write README file
 fs.appendFile("README.md", generateMarkdown(arrAnswers));

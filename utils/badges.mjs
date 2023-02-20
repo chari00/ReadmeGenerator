@@ -1,3 +1,4 @@
+//create function to link the badge to the license the user selected.
 function badges(licenseType) {
   if (licenseType === "MIT") {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n\n`;
