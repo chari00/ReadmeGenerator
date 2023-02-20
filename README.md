@@ -13,9 +13,9 @@
 ## Description
 This is an App to generate README.md file using node.js and inquirer.js.
 ## Installation 
-The software package needed to install are [package.json](https://docs.npmjs.com/cli/v9/configuring-npm/package-json), and [Inquirer package](https://www.npmjs.com/package/inquirer). In the command line type `npm init -y` to install `package.json` and  `npm i inquirer` to install inquirer.js .
+The software package needed to install are [package.json](https://docs.npmjs.com/cli/v9/configuring-npm/package-json), and [Inquirer package](https://www.npmjs.com/package/inquirer). In the command line type `npm init -y` to install `package.json` and  `npm i inquirer` to install inquirer.js.
 ## Usage
-In the command line type node index.mjs, press ENTER to run the README questionaire for generating README file.
+In the command line type node index.mjs, press ENTER to run the README questionaire for generating README file. This is the [DEMO-VIDEO](images/Demo-video.mp4) showing how the application works.
 ## License
 This project is covered by MIT.
 ## Contributing
